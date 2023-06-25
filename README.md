@@ -1,2 +1,6 @@
 # NoteBook
-It is simple note taking application with ability to categorize your notes by creating a Notebooks.
+It can store and organize simple notes
+
+gradle run
+
+gradle distZip

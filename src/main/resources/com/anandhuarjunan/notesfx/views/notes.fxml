@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import io.github.palexdev.materialfx.font.MFXFontIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anandhuarjunan.notesfx.views.NotesPresenter">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <children>
+            <MFXScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: transparent;" StackPane.alignment="CENTER">
+               <content>
+                  <FlowPane fx:id="flowPane" alignment="CENTER" hgap="20.0" prefWrapLength="800.0" style="-fx-background-color: transparent;" vgap="20.0" />
+               </content>
+               <padding>
+                  <Insets bottom="30.0" top="30.0" />
+               </padding>
+            </MFXScrollPane>
+            <MFXFontIcon fx:id="addBtn" description="mfx-plus" selectionFill="#991616" size="35.0" StackPane.alignment="BOTTOM_RIGHT">
+               <StackPane.margin>
+                  <Insets bottom="45.0" right="45.0" />
+               </StackPane.margin>
+            </MFXFontIcon>
+         </children>
+      </StackPane>
+   </children>
+</VBox>

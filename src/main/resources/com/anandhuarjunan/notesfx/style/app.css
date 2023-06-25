@@ -1,0 +1,131 @@
+@import 'Colours.css';
+
+@import '../fonts/Fonts.css';
+
+* {
+	-fx-text-fill: -txtcolor;
+	
+}
+  
+.mainAppPane {
+	-fx-background-radius: 10;
+	-fx-border-radius: 10;
+	-fx-background-color: -bgcolor1;
+	-fx-border-color: -bgcolor1;
+}
+/**************************************************
+ * Window Header       
+**************************************************/
+.mainAppPane .close-icon {
+	-mfx-color: #EF6E6B;
+	-fx-opacity: 0.5;
+}
+
+.mainAppPane .close-icon:hover {
+	-fx-opacity: 1.0;
+}
+
+.mainAppPane .minimize-icon {
+	-mfx-color: #ffbf37;
+	-fx-opacity: 0.5;
+}
+
+.mainAppPane .minimize-icon:hover {
+	-fx-opacity: 1.0;
+}
+
+.mainAppPane .always-on-top-icon {
+	-mfx-color: #7a0ed9;
+	-fx-opacity: 0.5;
+}
+
+.mainAppPane .always-on-top-icon:hover {
+	-fx-opacity: 1.0;
+}
+
+.mainAppPane .always-on-top-icon:always-on-top {
+	-fx-opacity: 1.0;
+}
+
+.mainAppPane .header {
+	-fx-font-family: 'Open Sans SemiBold';
+	-fx-font-size: 20;
+}
+
+.contentPane {
+	-fx-font-family: 'Open Sans Regular';
+	-fx-background-radius: 10;
+	-fx-border-radius: 10;
+	-fx-background-color: -bgcolor3;
+}
+
+.menu-bar {
+	-fx-font-family: 'Open Sans Regular';
+	-fx-background-radius: 5;
+	-fx-border-radius: 5;
+	-fx-border-color: -bgcolor2;
+	-fx-background-color: -bgcolor2;
+}
+
+.text-area>.scroll-pane>.scroll-bar:horizontal .thumb, .text-area>.scroll-pane>.scroll-bar:vertical .thumb
+	{
+	-fx-background-color: -bgcolor4;
+	-fx-background-insets: 0, 0, 0;
+	-fx-background-radius: 0em;
+}
+
+.text-area {
+	-fx-border-color: -bgcolor2;
+	-fx-background-color: -bgcolor2;
+	-fx-border-radius: 10;
+}
+
+.text-area .content {
+	-fx-background-color: -bgcolor2;
+}
+
+
+ .tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+ .tab-pane .tab {
+        -fx-background-insets: 0 4 0 4;
+    	-fx-background-color: -bgcolor2;
+    	-fx-border-radius: 5;
+    	-fx-background-radius: 5;
+    	
+    
+}
+
+ .tab-pane .tab:selected {
+		-fx-background-color: -bgcolor4;
+		-fx-border-radius: 5;
+	-fx-background-radius: 5;
+	
+}
+
+
+ .tab .tab-label {
+    -fx-alignment: CENTER;
+	-fx-text-fill: -txtcolor;
+    -fx-font-family: 'Open Sans Regular';
+    -fx-padding: 4 4 4 4 ;
+    
+}
+
+ .tab:selected .tab-label {
+    -fx-alignment: CENTER;
+}
+
+ .tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+    
+    
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}

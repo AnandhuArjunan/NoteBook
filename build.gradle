@@ -1,0 +1,31 @@
+plugins {
+  id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+    implementation group: 'com.dlsc.afterburner', name: 'afterburner.fx', version: '2.2.0'
+    implementation group: 'io.github.palexdev', name: 'materialfx', version: '11.13.5'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.7.2'
+}
+
+repositories {
+    mavenCentral()
+    
+}
+
+javafx {
+    version = '17'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+version = '2.0.0'
+
+application {
+    mainClass = "com.anandhuarjunan.notesfx.Launcher"
+    applicationName = 'NoteBook'
+}
+
