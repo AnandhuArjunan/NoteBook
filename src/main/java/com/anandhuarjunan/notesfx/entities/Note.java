@@ -9,7 +9,7 @@ public class Note {
     private String note;
     private final NoteBook notebook;
     private final Date writeDate;
-    private final String title;
+    private String title;
     
 
     // App constructor
@@ -46,6 +46,10 @@ public class Note {
 
 	public String getTitle() {
 		return title;
+	}
+	
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public Date getWriteDate() {

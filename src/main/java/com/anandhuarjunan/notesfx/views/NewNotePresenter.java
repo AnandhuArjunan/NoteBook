@@ -32,6 +32,8 @@ public class NewNotePresenter implements Initializable{
     
     @FXML
     private MFXButton saveBtn;
+    
+   
 
 
 	@Override

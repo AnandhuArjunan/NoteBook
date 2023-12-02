@@ -30,7 +30,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="900.0" styleClass="mainAppPane" stylesheets="@../style/app.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anandhuarjunan.notesfx.views.MainPresenter">
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="900.0" styleClass="mainAppPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anandhuarjunan.notesfx.views.MainPresenter">
    <center>
       <VBox alignment="TOP_CENTER" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
@@ -38,7 +38,7 @@
                <children>
                   <HBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <MFXFontIcon description="mfx-file" size="25.0" />
+                        <MFXFontIcon description="mfx-list-dropdown" size="30.0" />
                         <Label styleClass="header" text="NoteBook">
                            <font>
                               <Font name="Calibri Bold" size="20.0" />
@@ -64,10 +64,10 @@
                     <MenuItem fx:id="newNoteBook" mnemonicParsing="false" text="New Notebook" />
                   </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
+                <Menu mnemonicParsing="false" text="Settings">
+                     <items>
+                        <MenuItem fx:id="theme" mnemonicParsing="false" text="Change Theme" />
+                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
@@ -95,6 +95,6 @@
       </VBox>
    </center>
    <padding>
-      <Insets bottom="10.0" left="10.0" right="10.0" />
+      <Insets bottom="20.0" left="25.0" right="25.0" top="20.0" />
    </padding>
 </BorderPane>

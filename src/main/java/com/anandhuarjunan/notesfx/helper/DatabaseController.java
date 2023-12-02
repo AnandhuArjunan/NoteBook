@@ -132,9 +132,10 @@ public class DatabaseController {
     }
 
     public static void updateNote(Note note) throws SQLException {
-        PreparedStatement statement = getConnection().prepareStatement("UPDATE NOTES SET NOTE = ? WHERE ID = ?");
+        PreparedStatement statement = getConnection().prepareStatement("UPDATE NOTES SET NOTE = ?,TITLE= ? WHERE ID = ?");
         statement.setString(1, note.getNote());
-        statement.setInt(2, note.getId());
+        statement.setString(2, note.getTitle());
+        statement.setInt(3, note.getId());
 
         statement.execute();
     }
@@ -165,11 +166,7 @@ public class DatabaseController {
             java.util.Date resultDate = foundNotes.getDate("WRITEDATE");
             noteList.add(new Note(resultID ,title, resultNote, getNoteBook(notebookId), resultDate));
         }
-        if (!noteList.isEmpty()) {
-            return noteList;
-        } else {
-            throw new SQLException("No notes found for notebook: " + noteBookId);
-        }
+        return noteList;
 
     }
 

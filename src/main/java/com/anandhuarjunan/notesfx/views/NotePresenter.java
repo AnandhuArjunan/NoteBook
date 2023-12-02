@@ -10,6 +10,7 @@ import com.anandhuarjunan.notesfx.entities.Note;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
 
 public class NotePresenter implements Initializable {
 
@@ -21,9 +22,18 @@ public class NotePresenter implements Initializable {
 
 	@FXML
 	private Label title;
+	
+    @FXML
+    private BorderPane notePane;
+	
+	@Inject
+	private NotesPresenter notesPresenter;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+		notePane.setOnMouseClicked(ev->{
+			notesPresenter.openViewMode(note);
+		});
 		content.setText(note.getNote());
 		title.setText(note.getTitle());
 	}

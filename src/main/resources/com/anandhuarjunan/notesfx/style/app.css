@@ -1,23 +1,92 @@
-@import 'Colours.css';
-
+@import 'colours.css';
 @import '../fonts/Fonts.css';
 
 * {
 	-fx-text-fill: -txtcolor;
-	
+
 }
-  
+
+.icon-text .icon-text-label{
+	-fx-font-size: 40px;
+    -fx-font-family: 'Oleo Script';
+}
+.icon-text .mfx-font-icon{
+    -mfx-color: -bgcolor3;
+}
+
+.customPopup{
+	-fx-background-radius: 10;
+	-fx-border-radius: 10;
+	-fx-background-color: -bgcolor1;
+	-fx-border-color: -bgcolor3;
+}
+
+.mfx-text-field {
+	-fx-background-color:-bgcolor1;
+	-fx-background-radius: 5;
+	-fx-border-color: -bgcolor3;
+	-fx-border-radius: 5;
+	-fx-padding: 5;
+
+}
+
+.customPopup .header {
+	-fx-font-family: 'Oleo Script';
+	-fx-font-size: 30;
+}
+
+.mfx-font-icon {
+    -mfx-color: -txtcolor;
+}
+
+.button {
+	-fx-background-color: -bgcolor3;
+	-fx-font-family: 'Sometype Mono';
+}
+
+.notebook {
+	-fx-background-color: -bgcolor2;
+	-fx-background-radius: 10;
+	-fx-border-radius: 10;
+	-fx-border-color: -bgcolor2;
+
+}
+
+.mfx-scroll-pane {
+		-track-color:-bgcolor3;
+	-thumb-color: rgb(137, 137, 137);
+	-thumb-hover-color: rgb(89, 88, 91);
+}
+
+.notebook #label {
+	-fx-font-family: 'Sometype Mono';
+	-fx-font-size: 20;
+
+}
+
+.notebook #content {
+	-fx-font-family: 'Sometype Mono';
+	-fx-font-size: 12;
+
+}
+
 .mainAppPane {
 	-fx-background-radius: 10;
 	-fx-border-radius: 10;
 	-fx-background-color: -bgcolor1;
 	-fx-border-color: -bgcolor1;
 }
+
+.mainAppPane .header {
+	-fx-font-family: 'Oleo Script';
+	-fx-font-size: 25;
+}
+
 /**************************************************
  * Window Header       
 **************************************************/
 .mainAppPane .close-icon {
-	-mfx-color: #EF6E6B;
+	-mfx-color: -bgcolor4;
 	-fx-opacity: 0.5;
 }
 
@@ -26,7 +95,7 @@
 }
 
 .mainAppPane .minimize-icon {
-	-mfx-color: #ffbf37;
+	-mfx-color: -bgcolor3;
 	-fx-opacity: 0.5;
 }
 
@@ -35,7 +104,7 @@
 }
 
 .mainAppPane .always-on-top-icon {
-	-mfx-color: #7a0ed9;
+	-mfx-color: -bgcolor4;
 	-fx-opacity: 0.5;
 }
 
@@ -47,85 +116,110 @@
 	-fx-opacity: 1.0;
 }
 
-.mainAppPane .header {
-	-fx-font-family: 'Open Sans SemiBold';
-	-fx-font-size: 20;
+.menu {
+	-fx-background-color: -bgcolor2;
 }
 
-.contentPane {
-	-fx-font-family: 'Open Sans Regular';
-	-fx-background-radius: 10;
-	-fx-border-radius: 10;
-	-fx-background-color: -bgcolor3;
+.menu:hover {
+	-fx-background-color: -bgcolor4;
 }
-
 .menu-bar {
-	-fx-font-family: 'Open Sans Regular';
+	-fx-font-family: 'Sometype Mono';
 	-fx-background-radius: 5;
 	-fx-border-radius: 5;
 	-fx-border-color: -bgcolor2;
 	-fx-background-color: -bgcolor2;
 }
 
-.text-area>.scroll-pane>.scroll-bar:horizontal .thumb, .text-area>.scroll-pane>.scroll-bar:vertical .thumb
-	{
+
+
+.menu-item:hover  {
+    -fx-background-color:-bgcolor4; 
+}
+
+.context-menu {
+    -fx-background-color:-bgcolor2;
+
+}
+
+
+.text-area>.scroll-pane>.scroll-bar:horizontal .thumb,
+.text-area>.scroll-pane>.scroll-bar:vertical .thumb {
 	-fx-background-color: -bgcolor4;
 	-fx-background-insets: 0, 0, 0;
 	-fx-background-radius: 0em;
 }
 
 .text-area {
+	-fx-background-color: transparent;
+	-fx-font-family: 'Source Code Pro';
+	-fx-font-size: 15;
+}
+
+
+
+.text-area .scroll-pane {
+	-fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport {
+	-fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content {
+	-fx-background-color: -bgcolor2;
 	-fx-border-color: -bgcolor2;
-	-fx-background-color: -bgcolor2;
+	-fx-background-radius: 10;
 	-fx-border-radius: 10;
+-fx-padding: 20px;
+
 }
 
-.text-area .content {
+
+
+
+.tab-pane .tab-header-area .tab-header-background {
+	-fx-opacity: 0;
+}
+
+.tab-pane .tab {
+	-fx-background-insets: 0 4 0 4;
 	-fx-background-color: -bgcolor2;
-}
-
-
- .tab-pane .tab-header-area .tab-header-background {
-    -fx-opacity: 0;
-}
-
- .tab-pane .tab {
-        -fx-background-insets: 0 4 0 4;
-    	-fx-background-color: -bgcolor2;
-    	-fx-border-radius: 5;
-    	-fx-background-radius: 5;
-    	
-    
-}
-
- .tab-pane .tab:selected {
-		-fx-background-color: -bgcolor4;
-		-fx-border-radius: 5;
+	-fx-border-radius: 5;
 	-fx-background-radius: 5;
-	
+
+
+}
+
+.tab-pane .tab:selected {
+	-fx-background-color: -bgcolor4;
+	-fx-border-radius: 5;
+	-fx-background-radius: 5;
+
 }
 
 
- .tab .tab-label {
-    -fx-alignment: CENTER;
+.tab .tab-label {
+	-fx-alignment: CENTER;
 	-fx-text-fill: -txtcolor;
-    -fx-font-family: 'Open Sans Regular';
-    -fx-padding: 4 4 4 4 ;
-    
+	-fx-font-family: 'Sometype Mono';
+	-fx-padding: 4 4 4 4;
+
 }
 
- .tab:selected .tab-label {
-    -fx-alignment: CENTER;
+.tab:selected .tab-label {
+	-fx-alignment: CENTER;
 }
 
- .tab-pane:top *.tab-header-area {
-    -fx-background-insets: 0, 0 0 1 0;
-    /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
-    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
-    
-    
+.tab-pane:top *.tab-header-area {
+	-fx-background-insets: 0, 0 0 1 0;
+	/* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+	-fx-padding: 0.416667em 0.166667em 0.0em 0.0em;
+	/* overridden as 5 2 0 0 */
+
+
 }
 
-.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
-    -fx-border-color: transparent;
+.tab-pane:focused>.tab-header-area>.headers-region>.tab:selected .focus-indicator {
+	-fx-border-color: transparent;
 }

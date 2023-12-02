@@ -7,12 +7,11 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anandhuarjunan.notesfx.views.NewNotePresenter">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anandhuarjunan.notesfx.views.NewNotePresenter">
    <center>
       <VBox spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <MFXTextField fx:id="title" floatingText="Title" focusTraversable="false" prefWidth="495.0" text="text" />
+            <MFXTextField fx:id="title" floatMode="DISABLED" floatingText="Title" focusTraversable="false" prefWidth="495.0" promptText="Title" />
             <TextArea fx:id="content" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
          </children>
          <padding>
