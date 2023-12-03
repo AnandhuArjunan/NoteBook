@@ -4,8 +4,10 @@ It is simple note taking application with ability to categorize your notes by cr
 
 ## Screenshots
 
-<img src="screenshots/Screenshot 2023-10-14 145942.png" alt="" width="600"/>
-<img src="screenshots/Screenshot 2023-10-14 150053.png" alt="" width="600"/>
+<img src="screenshots/1.png" alt="" width="600"/>
+<img src="screenshots/2.png" alt="" width="600"/>
+<img src="screenshots/3.png" alt="" width="600"/>
+<img src="screenshots/4.png" alt="" width="600"/>
 
 
 # Tech
