@@ -1,4 +1,4 @@
-# NoteBook
+# NoteBook - A simple note taking application in JavaFX
 It is simple note taking application with ability to categorize your notes by creating a Notebooks.
 
 
